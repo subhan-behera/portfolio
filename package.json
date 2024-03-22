@@ -1,10 +1,13 @@
 {
-  "name": "react-portfolio",
+  "homepage": "https://subhan-behera.github.io/portfolio/",
+  "name": "react-portfilio",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "predeploy": "npm run build",
     "dev": "vite",
+    "deploy": "gh-pages -d dist",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
@@ -13,7 +16,8 @@
     "@fontsource/outfit": "^5.0.12",
     "@fontsource/roboto": "^5.0.12",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-scripts": "^5.0.1"
   },
   "devDependencies": {
     "@types/react": "^18.2.64",
